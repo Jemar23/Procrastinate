@@ -8,9 +8,9 @@ import TwitchCard from './Util/TwitchCard'
 import TwitchButton from './Util/TwitchButton'
 import YoutubeButton from './Util/YoutubeButton'
 import SpotifyButton from './Util/SpotifyButton'
-import SpotifyContent from './Spotify/SpotifyContent'
 import YoutubeContent from './Youtube/YoutubeContent'
-import TwitchContent from './Twitch/TwitchContent'
+import Twitch from './Twitch/TwitchContent'
+import Spotify from './Spotify/SpotifyContent'
 
 export default function Home() {
   return (
@@ -23,10 +23,10 @@ export default function Home() {
         </div>
          <div className="flex justify-between grid-cols-3">
             <TwitchCard>
-              <TwitchContent />
+              <Twitch />
             </TwitchCard>
             <SpotifyCard>
-              <SpotifyContent />
+              <Spotify />
             </SpotifyCard>
             <YoutubeCard>
               <YoutubeContent />
