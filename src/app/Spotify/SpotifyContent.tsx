@@ -17,7 +17,7 @@ export default function Spotify() {
         <SpotifyInput handleChangePlaylist={handleChangePlaylist} />
       </div>
       <div className="object-fill">
-        <SpotifyContent playlist={playlist} />
+        <SpotifyContent playlist={playlist} /> 
       </div>
     </>
   );
