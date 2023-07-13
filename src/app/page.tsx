@@ -1,16 +1,16 @@
 import Image from 'next/image'
-import Timer from './Timer'
+import Break from './Break'
 import Nav from './Nav'
-import Draw from './Draw'
+import Focus from './Focus'
 import SpotifyCard from './Util/SpotifyCard'
 import YoutubeCard from './Util/YoutubeCard'
 import TwitchCard from './Util/TwitchCard'
 import TwitchButton from './Util/TwitchButton'
 import YoutubeButton from './Util/YoutubeButton'
 import SpotifyButton from './Util/SpotifyButton'
-import YoutubeContent from './Youtube/YoutubeContent'
 import Twitch from './Twitch/TwitchContent'
 import Spotify from './Spotify/SpotifyContent'
+import Youtube from './Youtube/YoutubeContent'
 
 export default function Home() {
   return (
@@ -18,8 +18,8 @@ export default function Home() {
       <div>
         <Nav>Procrastinate</Nav>
         <div className="flex justify-center grid-cols-2">
-          <Draw>Excalidraw Here</Draw>
-          <Timer>Timer Here</Timer>
+          <Focus>Focus Timer</Focus>
+          <Break>Break Timer</Break>
         </div>
          <div className="flex justify-between grid-cols-3">
             <TwitchCard>
@@ -29,7 +29,7 @@ export default function Home() {
               <Spotify />
             </SpotifyCard>
             <YoutubeCard>
-              <YoutubeContent />
+              <Youtube />
             </YoutubeCard>
           </div>
         <div className="flex flex-col static">

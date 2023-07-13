@@ -7,7 +7,6 @@ export default function Spotify() {
 
   const handleChangePlaylist = (updatedPlaylist: any) => {
     const parsedPlaylist = parseSpotifyPlaylist(updatedPlaylist);
-    console.log(parsedPlaylist)
     setPlaylist(parsedPlaylist);
   };
 
@@ -17,19 +16,19 @@ export default function Spotify() {
         <SpotifyInput handleChangePlaylist={handleChangePlaylist} />
       </div>
       <div className="object-fill">
-        <SpotifyContent playlist={playlist} /> 
+        <SpotifyContent playlist={playlist} />
       </div>
     </>
   );
 }
 
 function SpotifyContent({ playlist }: any) {
-  const embedUrl = `https://open.spotify.com/embed/playlist/${playlist}`;
-
+  const parsedPlaylist = parseSpotifyPlaylist(playlist);
+  console.log(parsedPlaylist)
   return (
     <>
       <iframe
-        src={`${embedUrl}?utm_source=oembed`}
+        src={`${parsedPlaylist}?utm_source=oembed`}
         height="380"
         width="550"
         frameBorder="0"
