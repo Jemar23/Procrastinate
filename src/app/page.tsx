@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Break from './Break'
 import Nav from './Nav'
 import Focus from './Focus'
+import FocusTimer from './Util/FocusTimer'
+import BreakTimer from './Util/BreakTimer'
 import SpotifyCard from './Util/SpotifyCard'
 import YoutubeCard from './Util/YoutubeCard'
 import TwitchCard from './Util/TwitchCard'
@@ -18,8 +20,12 @@ export default function Home() {
       <div>
         <Nav>Procrastinate</Nav>
         <div className="flex justify-center grid-cols-2">
-          <Focus>Focus Timer</Focus>
-          <Break>Break Timer</Break>
+          <Focus>
+            <FocusTimer />
+          </Focus>
+          <Break>
+            <BreakTimer />
+          </Break>
         </div>
          <div className="flex justify-between grid-cols-3">
             <TwitchCard>
