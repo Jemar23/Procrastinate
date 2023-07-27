@@ -25,7 +25,9 @@ export default function BreakTimer() {
         }
       }, 1000);
     } else if (!isRunning && seconds !== 0) {
-      clearInterval(interval);
+      if (interval !== null) {
+        clearInterval(interval);
+      }
     }
     return () => clearInterval(interval as NodeJS.Timeout);
   }, [isRunning, minutes, seconds]);
