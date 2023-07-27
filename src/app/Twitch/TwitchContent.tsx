@@ -25,7 +25,7 @@ export default function Twitch() {
     return(
         <>
         <iframe
-            src={`https://player.twitch.tv/?channel=${creator}&parent=localhost`}
+            src={`https://player.twitch.tv/?channel=${creator}&parent=procrastinate-snowy.vercel.app`}
             height="380"
             width="550"
             allowFullScreen

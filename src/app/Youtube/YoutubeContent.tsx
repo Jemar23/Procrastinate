@@ -49,7 +49,7 @@ function formatYoutubeEmbedUrl(u: string): string {
   
     // Construct the embed URL
     if (videoId) {
-      const embedUrl = `http://www.youtube.com/embed/${videoId}?enablejsapi=1`;
+      const embedUrl = `https://www.youtube.com/embed/${videoId}?enablejsapi=1`;
       console.log(embedUrl)
       return embedUrl;
     }
