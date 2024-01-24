@@ -19,7 +19,7 @@ export default function Home() {
     <main>
       <div>
         <Nav>Procrastinate</Nav>
-        <div className="flex justify-center grid-cols-2">
+        <div className="grid justify-items-center grid-cols-1 md:grid-cols-2">
           <Focus>
             <FocusTimer />
           </Focus>
@@ -27,7 +27,7 @@ export default function Home() {
             <BreakTimer />
           </Break>
         </div>
-         <div className="flex justify-between grid-cols-3">
+         <div className="grid justify-items-center gap-4 grid-cols-1 md:grid-cols-3">
             <TwitchCard>
               <Twitch />
             </TwitchCard>
@@ -40,9 +40,9 @@ export default function Home() {
           </div>
         <div className="flex flex-col static">
          <div className="flex justify-around grid-cols-3 absolute inset-x-0 bottom-0 m-8">
-           <TwitchButton />
-           <SpotifyButton />
-           <YoutubeButton />
+              <TwitchButton />
+              <SpotifyButton />
+              <YoutubeButton />
           </div>
         </div>
       </div>
