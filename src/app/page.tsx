@@ -7,18 +7,24 @@ import BreakTimer from './Util/BreakTimer'
 import SpotifyCard from './Util/SpotifyCard'
 import YoutubeCard from './Util/YoutubeCard'
 import TwitchCard from './Util/TwitchCard'
-import TwitchButton from './Util/TwitchButton'
-import YoutubeButton from './Util/YoutubeButton'
-import SpotifyButton from './Util/SpotifyButton'
 import Twitch from './Twitch/TwitchContent'
 import Spotify from './Spotify/SpotifyContent'
 import Youtube from './Youtube/YoutubeContent'
+import SpotifySwitch from './Switches/SpotifySwitch'
+import YouTubeSwitch from './Switches/YouTubeSwitch'
+import TwitchSwitch from './Switches/TwitchSwitch'
 
 export default function Home() {
   return (
     <main>
       <div>
-        <Nav>Procrastinate</Nav>
+        <Nav>
+          <TwitchSwitch />
+          <SpotifySwitch />
+          Procrastinate
+          <YouTubeSwitch />
+          <button>24 Hour ToDo</button>
+        </Nav>
         <div className="grid justify-items-center grid-cols-1 md:grid-cols-2">
           <Focus>
             <FocusTimer />
@@ -37,14 +43,7 @@ export default function Home() {
             <YoutubeCard>
               <Youtube />
             </YoutubeCard>
-          </div>
-        <div className="flex flex-col static">
-         <div className="flex justify-around grid-cols-3 absolute inset-x-0 bottom-0 m-8">
-              <TwitchButton />
-              <SpotifyButton />
-              <YoutubeButton />
-          </div>
-        </div>
+          </div> 
       </div>
     </main>
   )
