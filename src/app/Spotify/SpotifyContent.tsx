@@ -15,7 +15,7 @@ export default function Spotify() {
       <div className="absolute inset-x-0 bottom-0">
         <SpotifyInput handleChangePlaylist={handleChangePlaylist} />
       </div>
-       <div className="relative flex items-center justify-center object-cover w-2 h-2 md:w-96 md:h-96 lg:w-48 lg:h-48 2xl:w-96 2xl:h-96">
+       <div className="flex items-center justify-center object-fill w-full h-full sm:w-full sm:h-full md:w-48 md:h-48 lg:w-96 lg:h-96 2xl:w-96 2xl:h-96">
         <SpotifyContent playlist={playlist} />
        </div>
     </>
@@ -28,7 +28,7 @@ export function SpotifyContent({ playlist }: any) {
   return (
     <>
       <iframe
-        className="relative flex items-center justify-center text-center m-8 overflow-hidden"
+        // className="relative flex items-center justify-center text-center m-8 overflow-hidden"
         src={`${parsedPlaylist}?utm_source=oembed`}
         height="380"
         width="550"

@@ -27,6 +27,7 @@ function YoutubeContent({ url }: any) {
     return(
         <>
         <iframe
+            className='rounded-md'
             src={urlEmbed}
             height="380"
             width="550"
