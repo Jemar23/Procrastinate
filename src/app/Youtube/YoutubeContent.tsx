@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import YoutubeInput from './YoutubeInput';
 
 export default function Youtube() {
-  const [url, setUrl] = useState("https://www.youtube.com/watch?v=CgwWiExgO3I");
+  const [url, setUrl] = useState("https://www.youtube.com/watch?v=Ah7i5EFVDqA");
 
   const handleChangeUrl = (updatedPlaylist: any) => {
     setUrl(updatedPlaylist);
