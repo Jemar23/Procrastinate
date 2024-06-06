@@ -13,6 +13,7 @@ import Youtube from './Youtube/YoutubeContent'
 import SpotifySwitch from './Switches/SpotifySwitch'
 import YouTubeSwitch from './Switches/YouTubeSwitch'
 import TwitchSwitch from './Switches/TwitchSwitch'
+import TodoAppButton from './Util/TodoAppButton'
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
           <SpotifySwitch />
           Procrastinate
           <YouTubeSwitch />
-          <button>24 Hour ToDo</button>
+          <TodoAppButton />
         </Nav>
         <div className="grid justify-items-center grid-cols-1 md:grid-cols-2">
           <Focus>
