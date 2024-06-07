@@ -1,7 +1,6 @@
 "use client"
 import { SpotifyIcon } from '../Util/Icon'
 import { useToggleContent } from '../Store'
-import SpotifyCard from './SpotifyCard'
 
 export default function SpotifyButton() {
    const { isVisible, setContent } = useToggleContent();

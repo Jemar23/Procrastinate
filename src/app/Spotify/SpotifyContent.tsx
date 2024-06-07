@@ -24,7 +24,6 @@ export default function Spotify() {
 
 export function SpotifyContent({ playlist }: any) {
   const parsedPlaylist = parseSpotifyPlaylist(playlist);
-  console.log(parsedPlaylist)
   return (
     <>
       <iframe

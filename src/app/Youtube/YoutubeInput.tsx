@@ -12,6 +12,7 @@ export default function YoutubeInput({ handleChangeUrl }: any) {
     const handleKeyDown = (e: any) => {
         if (e.key === 'Enter') {
             handleChangeUrl(value);
+            setValue("");
         }
       };
     return(

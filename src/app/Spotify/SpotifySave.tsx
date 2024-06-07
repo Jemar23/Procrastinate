@@ -8,11 +8,3 @@ export default function SpotifySave() {
         </div>
     )
 }
-
-function SpotifyInput() {
-    return(
-        <div>
-            Saved Spotfiy Creator!
-        </div>
-    );
-}

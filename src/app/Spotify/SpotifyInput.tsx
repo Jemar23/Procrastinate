@@ -12,6 +12,7 @@ export default function SpotifyInput({ handleChangePlaylist }: any) {
     const handleKeyDown = (e: any) => {
         if (e.key === 'Enter') {
             handleChangePlaylist(value);
+            setValue("");
         }
       };
     return(

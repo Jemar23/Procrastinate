@@ -12,6 +12,7 @@ export default function TwitchInput({ handleChangeContentCreator }: any) {
     const handleKeyDown = (e: any) => {
         if (e.key === 'Enter') {
           handleChangeContentCreator(value);
+          setValue("");
         }
       };
     return(

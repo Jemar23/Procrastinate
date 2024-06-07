@@ -23,7 +23,6 @@ export default function Youtube() {
 
 function YoutubeContent({ url }: any) {
     const urlEmbed = formatYoutubeEmbedUrl(url)
-    console.log(urlEmbed)
     return(
         <>
         <iframe
